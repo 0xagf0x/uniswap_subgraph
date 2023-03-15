@@ -1,0 +1,49 @@
+  .btn {
+    width: 120px;
+    height: 48px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #000;
+    outline: none;
+    transition: 1s ease-in-out;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+
+    span {
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .icon {
+      width: 18px;
+      margin-right: 0.5rem;
+      filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(87deg) brightness(119%) contrast(119%)
+    }
+
+    &:hover {
+      transition: 0.5s ease-in-out;
+      background: #4F95DA;
+      border: 1px solid #4F95DA;
+
+      .icon {
+        visibility: visible;
+        filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(87deg) brightness(119%) contrast(119%)
+      }
+
+      span {
+        color: #fff;
+        font-weight: 100;
+      }
+    }
+
+    @media (max-width: 860px) {
+      margin-top: 2rem;
+    }
+  }
+
+
+
+

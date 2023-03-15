@@ -1,0 +1,163 @@
+
+
+.table {
+  margin: 1rem 0 0;
+  min-width: 300px;
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, .2);
+  display: block;
+  overflow-x: auto;
+  background-color: #fff;
+}
+
+.table-head {
+  border-top: none;
+  background: #e1e8f2;
+  color: #000;
+}
+
+.table tr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  display: none;
+}
+
+.table td {
+  display: block;
+
+  .td-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+  }
+}
+
+.table td:first-child {
+  margin-top: .5em;
+  display: flex;
+}
+
+.table td:last-child {
+  margin-bottom: .5em;
+}
+
+.table td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 16px;
+  display: inline-block;
+  color: #000;
+}
+
+.table th {
+  text-align: left;
+}
+
+.table td {
+  text-align: right;
+
+  @media screen and (max-width: $table) {
+    text-align: left;
+  }
+}
+
+
+.table {
+  color: #333;
+  border-radius: .4em;
+  overflow: hidden;
+}
+
+.table tr {
+  border-color: #bfbfbf;
+}
+
+.table th,
+.table td {
+  padding: .5em 1em;
+}
+
+@media screen and (max-width: $table) {
+  .table tr:nth-child(2) {
+    border-top: none;
+  }
+}
+
+@media screen and (min-width: $table) {
+  .table tr:hover:not(.top-row) {
+    background-color: #fb4f83;
+    color: #fff;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  .table td:before {
+    display: none;
+  }
+
+  .table th,
+  .table td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+
+  .table th:first-child,
+  .table td:first-child {
+    padding-left: 0;
+  }
+
+  .table th:last-child,
+  .table td:last-child {
+    padding-right: 0;
+  }
+
+  .table th,
+  .table td {
+    padding: 1em !important;
+  }
+}
+
+
+
+@-webkit-keyframes leftRight {
+  0% {
+    -webkit-transform: translateX(0)
+  }
+
+  25% {
+    -webkit-transform: translateX(-10px)
+  }
+
+  75% {
+    -webkit-transform: translateX(10px)
+  }
+
+  100% {
+    -webkit-transform: translateX(0)
+  }
+}
+
+@keyframes leftRight {
+  0% {
+    transform: translateX(0)
+  }
+
+  25% {
+    transform: translateX(-10px)
+  }
+
+  75% {
+    transform: translateX(10px)
+  }
+
+  100% {
+    transform: translateX(0)
+  }
+}
