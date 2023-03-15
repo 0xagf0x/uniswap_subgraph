@@ -91,7 +91,7 @@ function App() {
   return (
     // ApolloProvider is a component provided by the Apollo Client for managing state and data in a React app using GraphQL. It's used to provide an instance of the Apollo Client to the React component tree.
     <ApolloProvider>
-      <canvas id="gradient-canvas" data-js-darken-top data-transition-in></canvas>
+      <canvas id="gradient-canvas" className='gradient-canvas' data-js-darken-top data-transition-in></canvas>
       <div className='container'>
         <div className='container__block'>
           {/* page header */}

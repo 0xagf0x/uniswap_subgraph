@@ -506,6 +506,8 @@ const handleGradient = async () => {
     var gradient = new Gradient();
         gradient.initGradient("#gradient-canvas");
 
+    var footerGradient = new Gradient();
+        footerGradient.initGradient("#gradient-canvas-footer");
 };
 
 setTimeout(handleGradient, 2000);

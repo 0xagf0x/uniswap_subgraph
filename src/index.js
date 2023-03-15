@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/main.scss';
 import App from './App';
+import Footer from './components/Footer/Footer';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 
 
@@ -16,5 +17,6 @@ const client = new ApolloClient({
 root.render(
   <ApolloProvider client={client}>
     <App />
+    <Footer />
   </ApolloProvider>
 );
